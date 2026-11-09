@@ -35,7 +35,16 @@ final class FloatingPanel: NSPanel {
 }
 
 /// Lets SwiftUI content take the first click in a panel that isn't key yet (after the user looked at a link).
+/// It also drops the safe-area inset that the panel's hidden title bar would add, which left an empty strip above the content.
 final class FirstMouseHostingView<Content: View>: NSHostingView<Content> {
+    required init(rootView: Content) {
+        super.init(rootView: rootView)
+        safeAreaRegions = []
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) { fatalError("init(coder:) is not supported") }
+
     override func acceptsFirstMouse(for event: NSEvent?) -> Bool { true }
 }
 
