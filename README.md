@@ -1,8 +1,12 @@
 # Linker
 
-Add the right hyperlink to selected text in any Mac app. Select a name, press **⌃⌥K**, and Linker inserts the link. If it isn't sure, it shows a short list to pick from.
+Add the right hyperlink to selected text in any Mac app. Select one or several words and press **⌃⌥K**. If it's clear what the right URL is, Linker adds it. If not, it gives you a few options to choose from.
 
-Built for writing email in a desktop client (tested most with Mimestream; also works in Apple Mail, Notes, TextEdit, and Gmail or Google Docs in a browser), where adding a link normally means: select, ⌘K, go find the URL in a browser, check it's the right one, paste, confirm.
+<p align="center"><img src="docs/demo.gif" width="540" alt="Selecting a description of a blog post in an email, pressing Control-Option-K, and picking the post from Linker's list"></p>
+
+It doesn't only handle easy cases like a company name → its homepage. In the clip I select a description of a blog post, not even its title, and Linker finds the post. ([MP4](docs/demo.mp4))
+
+I built it because I've always found adding links in emails cumbersome: select, ⌘K, go find the URL in a browser, check it's the right one, paste, confirm. It's made for writing email in a desktop client (tested most with Mimestream; also works in Apple Mail, Notes, TextEdit, and Gmail or Google Docs in a browser).
 
 ## What it does
 
